@@ -56,15 +56,23 @@
             color: #ffffff;
             font-weight: bold;
         }
-        .box {
-            float: left;
-            width: 30%;
-            padding: 10px;
+        .blog-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .blog-item {
+            width: calc(33.333% - 10px); /* 每个博客项占三分之一宽度，减去一些间距 */
             margin-bottom: 10px;
             background: #ffffff;
+            padding: 10px;
+            box-sizing: border-box;
         }
-        .box img {
+        .blog-item img {
             width: 100%;
+            height: auto;
+            margin-bottom: 10px;
         }
         aside#sidebar {
             float: right;
@@ -114,26 +122,42 @@
         </div>
     </header>
 
-    <section class="boxes">
-        <div class="container clearfix">
-            <div class="box">
-                <img src="images/blog1.jpg" alt="博客图片1">
-                <h3>博客标题1</h3>
-                <p>这是博客内容1的简介。你可以在这里写一些简短的文字来吸引读者阅读全文。</p>
-                <a href="post1.html" class="button_1">阅读全文</a>
-            </div>
-            <div class="box">
-                <img src="images/blog2.jpg" alt="博客图片2">
-                <h3>博客标题2</h3>
-                <p>这是博客内容2的简介。你可以在这里写一些简短的文字来吸引读者阅读全文。</p>
-                <a href="post2.html" class="button_1">阅读全文</a>
-            </div>
-            <div class="box">
-                <img src="images/blog3.jpg" alt="博客图片3">
-                <h3>博客标题3</h3>
-                <p>这是博客内容3的简介。你可以在这里写一些简短的文字来吸引读者阅读全文。</p>
-                <a href="post3.html" class="button_1">阅读全文</a>
-            </div>
+    <section class="blog-list">
+        <div class="blog-item">
+            <img src="images/blog1.jpg" alt="博客图片1">
+            <h3>博客标题1</h3>
+            <p>这是博客内容1的简介。你可以在这里写一些简短的文字来吸引读者阅读全文。</p>
+            <a href="post1.html" class="button_1">阅读全文</a>
+        </div>
+        <div class="blog-item">
+            <img src="images/blog2.jpg" alt="博客图片2">
+            <h3>博客标题2</h3>
+            <p>这是博客内容2的简介。你可以在这里写一些简短的文字来吸引读者阅读全文。</p>
+            <a href="post2.html" class="button_1">阅读全文</a>
+        </div>
+        <div class="blog-item">
+            <img src="images/blog3.jpg" alt="博客图片3">
+            <h3>博客标题3</h3>
+            <p>这是博客内容3的简介。你可以在这里写一些简短的文字来吸引读者阅读全文。</p>
+            <a href="post3.html" class="button_1">阅读全文</a>
+        </div>
+        <div class="blog-item">
+            <img src="images/blog4.jpg" alt="博客图片4">
+            <h3>博客标题4</h3>
+            <p>这是博客内容4的简介。你可以在这里写一些简短的文字来吸引读者阅读全文。</p>
+            <a href="post4.html" class="button_1">阅读全文</a>
+        </div>
+        <div class="blog-item">
+            <img src="images/blog5.jpg" alt="博客图片5">
+            <h3>博客标题5</h3>
+            <p>这是博客内容5的简介。你可以在这里写一些简短的文字来吸引读者阅读全文。</p>
+            <a href="post5.html" class="button_1">阅读全文</a>
+        </div>
+        <div class="blog-item">
+            <img src="images/blog6.jpg" alt="博客图片6">
+            <h3>博客标题6</h3>
+            <p>这是博客内容6的简介。你可以在这里写一些简短的文字来吸引读者阅读全文。</p>
+            <a href="post6.html" class="button_1">阅读全文</a>
         </div>
     </section>
 
