@@ -91,11 +91,18 @@
             position: relative;
             bottom: 0;
             width: 100%;
+            margin-top: 20px; /* 添加外边距，使版权信息与上面内容有间隔 */
         }
         footer a {
             color: #ffffff;
             text-decoration: none;
             font-weight: bold;
+        }
+        /* 清除浮动 */
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
         }
     </style>
 </head>
@@ -127,7 +134,7 @@
     </section>
 
     <section class="boxes">
-        <div class="container">
+        <div class="container clearfix"> <!-- 添加clearfix类 -->
             <div class="box">
                 <img src="images/blog1.jpg" alt="博客图片1">
                 <h3>博客标题1</h3>
